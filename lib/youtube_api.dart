@@ -28,7 +28,7 @@ class YoutubeAPI {
   Future<List> search(String query, {String type}) async {
     this.query = query;
     Uri url = api.searchUri(query, type: type);
-    var res = await http.get(url, headers: {"Accept": "application/json"});
+    var res = await http.get(url, headers: {"Accept": "application/json", "Referer": "https://sounter.com"});
     var jsonData = json.decode(res.body);
     if (jsonData['error'] != null) {
       print(jsonData['error']);
