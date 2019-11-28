@@ -74,6 +74,7 @@ class API {
       "maxResults": "${this.maxResults}",
       "videoEmbeddable": "true", 
       "videoSyndicated": "true",
+      "safeSearch": "strict",
       "key": "${this.key}",
       "type": "${this.type}"
     };
