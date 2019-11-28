@@ -72,8 +72,8 @@ class API {
       "q": "${this.query}",
       "part": "snippet",
       "maxResults": "${this.maxResults}",
-      "videoEmbeddable": true, 
-      "videoSyndicated": true,
+      "videoEmbeddable": "true", 
+      "videoSyndicated": "true",
       "key": "${this.key}",
       "type": "${this.type}"
     };
